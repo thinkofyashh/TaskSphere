@@ -14,5 +14,5 @@ const todo=mongoose.model("todos",todoSchema)
 
 
 module.exports={
-    todos:todo
+    todo
 }

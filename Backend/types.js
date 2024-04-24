@@ -1,4 +1,4 @@
-const zod=require("zod")
+const Zod=require("zod")
 /*
 
 1. route 
@@ -21,7 +21,7 @@ body{
     })
 
     const UpdateTodo=Zod.object({
-        id:zod.string()
+        id:Zod.string()
     })
 
     module.exports={
