@@ -3,9 +3,11 @@ const bodyParser=require("body-parser")
 const { string } = require("zod")
 const { createTodo, updateTodo } = require("./Backend/types")
 const { todo } = require("./Backend/db")
+const cors=require("cors")
 
 const app=express()
 app.use(bodyParser.json())
+app.use(cors())
 
 app.post("/todo",async function(req,res){
     const newtodo=req.body
